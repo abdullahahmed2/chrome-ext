@@ -11,7 +11,7 @@ const app = express();
 app.use(bodyParser.json());
 
 const SECRET_KEY = process.env.SECRET_KEY;
-
+const PORT = 3000
 
 // User Registration
 app.post('/register', async (req, res) => {
@@ -137,7 +137,7 @@ app.post('/registries/:registryId/products', authenticateJWT, async (req, res) =
   
   
 
-  app.listen(3000, () => {
+  app.listen(PORT, () => {
     console.log('Server running on port 3000');
   });
   
