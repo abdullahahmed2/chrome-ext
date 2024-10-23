@@ -6,7 +6,7 @@ const { Pool } = require('pg');
 const bcrypt = require('bcrypt');
 const axios = require('axios');
 
-const app = express();
+const app = express();cd 
 app.use(bodyParser.json());
 
 // Database connection
